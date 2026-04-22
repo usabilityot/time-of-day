@@ -62,6 +62,34 @@
            the background color using document.querySelector('html') 
         */
 
+
+
+    myDate = new Date();
+    myHour = myDate.getHours();
+    mySentence = "";
+    myColor = "";
+
+    if(myHour >= 12){
+        //alert("It's after noon!");
+        mySentence = "It's after noon!";
+        myColor = "blue";
+    }else{
+        //alert("it is not after noon!");
+        mySentence = "It's not after noon!";
+        myColor = "purple";
+    }
+
+    document.getElementById("mydiv").innerHTML = mySentence;
+    document.body.style.backgroundColor = myColor;
+
+
+
+
+
+
+
+
+
         // Fixes HTML/CSS Checker links
         document.addEventListener("DOMContentLoaded", function() {
             var currentUrl = window.location.href;
