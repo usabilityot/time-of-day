@@ -1,30 +1,4 @@
-/*
-Background: In this assignment, you'll work with the JavaScript Date objectLinks to an external site. to integrate information from the client's system clock into a web page.  Consider adding data to the page using document.getElementById() for example to place your data on the page.
 
-Deliverable: Create a web page that uses JavaScript to determine the current hour, and presents a different image, custom message, and color based on each of the following times of day:
-
-Morning (5am to 12 noon)
-Afternoon (12 noon to 6pm)
-Evening (6pm to 11pm)
-Night (11pm to 5am)
-Criteria: The three items above (color, image, message) must be unique for each of the 4 time periods of the day.
-
-Example: For example, between 5am and 12 noon, your page could show a picture of the sun, a saying that says 'Good Morning!' and the color orange for the background of the page, or perhaps a different style.
-
-Starting Point: If you wish, you can start with the following repo, which holds a flexible HTML template and images that you can use for the required times of day:
-
-STARTING POINT REPOLinks to an external site.
-
-Fork the repo above, work on by using github.dev and when done working on the page, convert your repo to a GitHub page and submit that page so I can see your work.
-
-You can see how the page looks before we begin here: https://newmanix.github.io/time-of-day/Links to an external site.
-
-Document How Your Page Works on Your Page: Because it may not be obvious what our page is doing, use the requirements we copied to our comments and write an explanation of what your page does and how it works in HTML on the page.
-
-Submission: Link the working web page to your portal then submit your portal page!
-
-Extra Credit: You can earn up to 10 extra points if you dynamically indicate the correct day of the week, on your web page as well!
-*/
 
 <!DOCTYPE html>
 <html lang="en">
@@ -97,14 +71,18 @@ Extra Credit: You can earn up to 10 extra points if you dynamically indicate the
     mySentence = "";
     myColor = "";
 
-    if(myHour >= 12){
-        //alert("It's after noon!");
+    if(myHour >= 4 && myHour <= 12){
+        mySentence = "It's morning!";
+        myColor = "#87CEEB";
+    }else if(myHour <= 18){
         mySentence = "It's after noon!";
-        myColor = "blue";
+        myColor = "#F4D03F";
+    }else if(myHour <= 22){
+        mySentence = "It's evening!";
+        myColor = "#E67E22";
     }else{
-        //alert("it is not after noon!");
-        mySentence = "It's not after noon!";
-        myColor = "purple";
+        mySentence = "It's night!";
+        myColor = "#2C3E50";
     }
 
     document.getElementById("time-text").innerHTML = mySentence;
@@ -112,7 +90,7 @@ Extra Credit: You can earn up to 10 extra points if you dynamically indicate the
     document.querySelector('html').style.backgroundColor = myColor;
 
 
-
+//myColor = "#87CEEB"; // Sky Blue
 
 
 
