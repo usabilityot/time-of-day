@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,20 +49,16 @@
         <h2 id="time-text">What time is it?</h2>
 
         <p>This page will change based on the hour of the day.</p>
-        <p>Add your explanation of what the page does, and how it works here.</p>
-
+        <p>Here is my understanding wihtout asking for AI help:
+            This page displays content using html, css, and JS. The first section is the HTML with the CSS inside the "style" tags. Then there is a body section that contains a single div or section or division. Then I see div class = "container", but I don't see where container is defined, or if what immediately follows is what is defining the class. Then the Script section is where the JS is located. In this section variables are defined, or declared. Then the If block selects sentences, colors, and images for the page. Then the dot notation does something important. I think it is using built in properties and connecting the variables that are in the quotes which are being taken into the functions as arguments and then assigned to variables that are then used by the HTML. 
+        </p>
+        <p>
+            I tried to get a corrected version of the above to paste into here, but could not figure out how to get a clean, text only version!
+        </p>
         <img id="time-pic" src="" alt="Time of Day Image">
     </div>
 
     <script>
-        // We will use this section to write our if/else logic
-        // Example: document.querySelector('#time-text').innerHTML = "Good Morning!";
-        
-        /* Below, we would target the 'html' element to change 
-           the background color using document.querySelector('html') 
-        */
-
-
 
     myDate = new Date();
     myHour = myDate.getHours();
@@ -94,10 +88,6 @@ if (myHour >= 4 && myHour < 12) {
     document.querySelector('html').style.backgroundColor = myColor;
     document.getElementById("time-pic").src = myImage;
     
-
-
-
-
 
 
 
