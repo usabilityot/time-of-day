@@ -70,19 +70,24 @@
     myHour = myDate.getHours();
     mySentence = "";
     myColor = "";
+    myImage = "";
 
     if(myHour >= 4 && myHour <= 12){
         mySentence = "It's morning!";
         myColor = "#87CEEB";
+        myImage = "https://unsplash.com/s/photos/morning-sunrise";
     }else if(myHour <= 18){
         mySentence = "It's after noon!";
         myColor = "#F4D03F";
+        myImage = "https://www.dreamstime.com/photos-images/sunny-day-bright-sky.html";
     }else if(myHour <= 22){
         mySentence = "It's evening!";
         myColor = "#E67E22";
+        myImage = "https://unsplash.com/s/photos/evening-sunset";
     }else{
         mySentence = "It's night!";
         myColor = "#2C3E50";
+        myImage = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0paMpY54XfYJeZ_cS9sC0Sr5S9M_UYIVh1QiUnjBDb9RM2-1456LjT8lrFmIP";
     }
 
     document.getElementById("time-text").innerHTML = mySentence;
