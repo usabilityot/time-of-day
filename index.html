@@ -72,23 +72,23 @@
     myColor = "";
     myImage = "";
 
-    if(myHour >= 4 && myHour <= 12){
-        mySentence = "It's morning!";
-        myColor = "#87CEEB";
-        myImage = "https://images.unsplash.com/photo-1470252649358-96947c03388f?auto=format&fit=crop&q=80&w=300&h=400";
-    }else if(myHour <= 18){
-        mySentence = "It's after noon!";
-        myColor = "#F4D03F";
-        myImage = "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=300&h=400";
-    }else if(myHour <= 22){
-        mySentence = "It's evening!";
-        myColor = "#E67E22";
-        myImage = "https://images.unsplash.com/photo-1472120482482-d44b0e97bc1d?auto=format&fit=crop&q=80&w=300&h=400";
-    }else{
-        mySentence = "It's night!";
-        myColor = "#2C3E50";
-        myImage = "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?auto=format&fit=crop&q=80&w=300&h=400";
-    }
+if (myHour >= 4 && myHour < 12) {
+    mySentence = "It's morning!";
+    myColor = "#87CEEB";
+    myImage = "https://images.unsplash.com/photo-1470252649358-96947c03388f?auto=format&fit=crop&q=80&w=300&h=400";
+} else if (myHour < 17) {
+    mySentence = "It's afternoon!";
+    myColor = "#F4D03F";
+    myImage = "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=300&h=400";
+} else if (myHour < 21) {
+    mySentence = "It's evening!";
+    myColor = "#E67E22";
+    myImage = "https://images.unsplash.com/photo-1472120482482-d44b0e97bc1d?auto=format&fit=crop&q=80&w=300&h=400";
+} else {
+    mySentence = "It's night!";
+    myColor = "#2C3E50";
+    myImage = "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?auto=format&fit=crop&q=80&w=300&h=400";
+}
 
     document.getElementById("time-text").innerHTML = mySentence;
     //document.body.style.backgroundColor = myColor;
