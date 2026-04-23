@@ -53,7 +53,7 @@
         <p>This page will change based on the hour of the day.</p>
         <p>Add your explanation of what the page does, and how it works here.</p>
 
-        <img id="time-pic" src="https://dummyimage.com/300x400" alt="Time of Day Image">
+        <img id="time-pic" src="myImage" alt="Time of Day Image">
     </div>
 
     <script>
@@ -93,6 +93,7 @@ if (myHour >= 4 && myHour < 12) {
     document.getElementById("time-text").innerHTML = mySentence;
     //document.body.style.backgroundColor = myColor;
     document.querySelector('html').style.backgroundColor = myColor;
+    document.getElementById("time-pic").src = myImage;
 
 
 
